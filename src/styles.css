@@ -1,0 +1,68 @@
+
+.frame {
+  display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+#image {
+    width: 100%;
+}
+
+.frame1 {
+    display: list-item;
+    justify-content: center; 
+    align-items: center;     
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.frame2 {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    margin-top: 25px;
+    width: 500px;
+
+}
+
+.frame3 {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;     
+    margin-top: 20px;
+}
+
+#input {
+    width: 100%;
+    
+}
+
+.frame4 {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    width: auto;
+    margin-top: 40px;
+}
+
+.button1 {
+    margin-right: 10px;
+
+}
+
+.button2 {
+    margin-left: 10px;
+
+}
+
+.privacy {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    width: auto;
+    margin-top: 10px;
+}

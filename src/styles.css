@@ -1,68 +1,94 @@
-
-.frame {
-  display: flex;
-    justify-content: center; 
-    align-items: center;     
-    height: 100vh;
-    padding-left: 20%;
-    padding-right: 20%;
+/* Base reset and sensible defaults */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
-#image {
-    width: 100%;
-}
-
-.frame1 {
-    display: list-item;
-    justify-content: center; 
-    align-items: center;     
-    padding-left: 20%;
-    padding-right: 20%;
+html,body{
+    height:100%;
+    margin:0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color:#111;
 }
 
-.frame2 {
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    margin-top: 25px;
-    width: 500px;
-
+/* Centering container */
+.frame{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
 }
 
-.frame3 {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    width: 100%;     
-    margin-top: 20px;
+.frame1{
+    width:100%;
+    max-width:720px;
+    text-align:center;
+    padding:0 16px;
 }
 
-#input {
-    width: 100%;
-    
+.frame2{
+    display:flex;
+    justify-content:center;
+    margin-top:28px;
 }
 
-.frame4 {
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    width: auto;
-    margin-top: 40px;
+/* Logo */
+#image{
+    width:260px;
+    max-width:100%;
+    height:auto;
 }
 
-.button1 {
-    margin-right: 10px;
-
+.frame3{
+    display:flex;
+    justify-content:center;
+    margin-top:18px;
 }
 
-.button2 {
-    margin-left: 10px;
-
+/* Search input */
+#input{
+    width:100%;
+    max-width:640px;
+    padding:12px 14px;
+    font-size:16px;
+    border:1px solid #dcdcdc;
+    border-radius:24px;
+    outline:none;
 }
 
-.privacy {
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    width: auto;
-    margin-top: 10px;
+#input:focus{
+    box-shadow:0 0 0 3px rgba(66,133,244,0.15);
+    border-color: rgba(66,133,244,0.6);
+}
+
+.frame4{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    margin-top:26px;
+}
+
+.button1, .button2{
+    padding:10px 16px;
+    border-radius:4px;
+    border:1px solid #dadce0;
+    background:#f8f9fa;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.button1:hover, .button2:hover{
+    box-shadow:0 1px 2px rgba(0,0,0,0.05);
+}
+
+.privacy{
+    margin-top:18px;
+    color:#5f6368;
+    font-size:13px;
+}
+
+@media (max-width:420px){
+    #image{ width:180px }
+    #input{ font-size:15px }
 }
